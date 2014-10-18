@@ -9,14 +9,46 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate
+{
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        let requestedTypes = UIUserNotificationType.Alert | .Sound
+
+        let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: nil)
+
+        UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
+        
         return true
+    }
+    
+    // Notifications
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
+    {
+        println("OK")
+        
+        var token = deviceToken.description.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "<>"))
+        token = token.stringByReplacingOccurrencesOfString(" ", withString: "")
+        println(deviceToken)
+        println(token)
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError)
+    {
+        println("FAIL")
+        println(error)
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+    {
+        println("REMOTE NOTIF")
+        println(userInfo)
     }
 
     func applicationWillResignActive(application: UIApplication) {

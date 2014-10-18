@@ -13,6 +13,7 @@
 		37B8FC0119F285D700BA56B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FC0019F285D700BA56B3 /* Images.xcassets */; };
 		37B8FC0419F285D700BA56B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FC0219F285D700BA56B3 /* LaunchScreen.xib */; };
 		37B8FC1019F285D700BA56B3 /* BahOuaisMorrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FC0F19F285D700BA56B3 /* BahOuaisMorrayTests.swift */; };
+		37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED7C7719F29E1B00ABB22C /* Context.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37B8FBFB19F285D700BA56B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37B8FBFB19F285D700BA56B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		37B8FBFE19F285D700BA56B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B8FC0019F285D700BA56B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37B8FC0319F285D700BA56B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		37B8FC0919F285D700BA56B3 /* BahOuaisMorrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BahOuaisMorrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FC0E19F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FC0F19F285D700BA56B3 /* BahOuaisMorrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BahOuaisMorrayTests.swift; sourceTree = "<group>"; };
+		37ED7C7719F29E1B00ABB22C /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,13 @@
 		37B8FBF619F285D600BA56B3 /* BahOuaisMorray */ = {
 			isa = PBXGroup;
 			children = (
+				37ED7C7619F29DEE00ABB22C /* ViewControllers */,
 				37B8FBF919F285D700BA56B3 /* AppDelegate.swift */,
-				37B8FBFB19F285D700BA56B3 /* ViewController.swift */,
 				37B8FBFD19F285D700BA56B3 /* Main.storyboard */,
 				37B8FC0019F285D700BA56B3 /* Images.xcassets */,
 				37B8FC0219F285D700BA56B3 /* LaunchScreen.xib */,
 				37B8FBF719F285D600BA56B3 /* Supporting Files */,
+				37ED7C7719F29E1B00ABB22C /* Context.swift */,
 			);
 			path = BahOuaisMorray;
 			sourceTree = "<group>";
@@ -110,6 +113,14 @@
 				37B8FC0E19F285D700BA56B3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37ED7C7619F29DEE00ABB22C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				37B8FBFB19F285D700BA56B3 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
 				37B8FBFC19F285D700BA56B3 /* ViewController.swift in Sources */,
 				37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +417,7 @@
 				37B8FC1519F285D700BA56B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37B8FC1619F285D700BA56B3 /* Build configuration list for PBXNativeTarget "BahOuaisMorrayTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				37B8FC1819F285D700BA56B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
