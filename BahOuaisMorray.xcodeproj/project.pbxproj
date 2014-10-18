@@ -12,6 +12,8 @@
 		3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044519F2A48B009DAF80 /* AuthentificationService.swift */; };
 		3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044719F2A8ED009DAF80 /* LoginViewController.swift */; };
 		3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044919F2B0B1009DAF80 /* RegisterViewController.swift */; };
+		3736044D19F2B679009DAF80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044C19F2B679009DAF80 /* User.swift */; };
+		3736044F19F2B6A1009DAF80 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044E19F2B6A1009DAF80 /* FormValidator.swift */; };
 		37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBF919F285D700BA56B3 /* AppDelegate.swift */; };
 		37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */; };
 		37B8FBFF19F285D700BA56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FBFD19F285D700BA56B3 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		3736044519F2A48B009DAF80 /* AuthentificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
 		3736044719F2A8ED009DAF80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3736044919F2B0B1009DAF80 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3736044C19F2B679009DAF80 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3736044E19F2B6A1009DAF80 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		3736044B19F2B64E009DAF80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3736044C19F2B679009DAF80 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		37B8FBEB19F285D600BA56B3 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +127,9 @@
 		37B8FBF619F285D600BA56B3 /* BahOuaisMorray */ = {
 			isa = PBXGroup;
 			children = (
-				3736044219F2A18D009DAF80 /* Utils */,
+				3736044B19F2B64E009DAF80 /* Models */,
 				3736043F19F2A0F0009DAF80 /* Services */,
+				3736044219F2A18D009DAF80 /* Utils */,
 				37ED7C7619F29DEE00ABB22C /* ViewControllers */,
 				37B8FBF919F285D700BA56B3 /* AppDelegate.swift */,
 				37B8FBFD19F285D700BA56B3 /* Main.storyboard */,
@@ -124,6 +137,7 @@
 				37B8FC0219F285D700BA56B3 /* LaunchScreen.xib */,
 				37B8FBF719F285D600BA56B3 /* Supporting Files */,
 				3736043C19F29FCC009DAF80 /* BahOuaisMorray-Bridging-Header.h */,
+				3736044E19F2B6A1009DAF80 /* FormValidator.swift */,
 			);
 			path = BahOuaisMorray;
 			sourceTree = "<group>";
@@ -315,11 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3736044F19F2B6A1009DAF80 /* FormValidator.swift in Sources */,
 				3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */,
 				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
 				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
 				3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */,
 				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
+				3736044D19F2B679009DAF80 /* User.swift in Sources */,
 				37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */,
 				37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */,
 				3736044419F2A1A1009DAF80 /* Environment.swift in Sources */,

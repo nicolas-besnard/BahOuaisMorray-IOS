@@ -8,22 +8,18 @@
 
 import UIKit
 
-class LoginViewController: UIViewController
+class LoginViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        nicknameTextField.delegate = self
+        passwordTextField.delegate = self
     }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-    
 
     /*
     // MARK: - Navigation

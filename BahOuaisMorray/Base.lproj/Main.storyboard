@@ -148,13 +148,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-ij-eLM">
-                                <rect key="frame" x="0.0" y="244" width="600" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Créer le compte">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -173,7 +166,6 @@
                     </view>
                     <connections>
                         <outlet property="confirmationTextField" destination="Hsr-Xq-nkm" id="c21-1x-ldo"/>
-                        <outlet property="createAccountButton" destination="WFt-ij-eLM" id="LMc-9K-FLM"/>
                         <outlet property="passwordTextField" destination="wG1-5r-nvy" id="mX7-Us-Eyi"/>
                         <outlet property="pseudoTextField" destination="6He-Zf-I5A" id="n3n-tp-6nm"/>
                     </connections>

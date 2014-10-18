@@ -8,28 +8,73 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController
+class RegisterViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var pseudoTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmationTextField: UITextField!
-    
-    @IBOutlet weak var createAccountButton: UIButton!
-    
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        pseudoTextField.delegate       = self
+        passwordTextField.delegate     = self
+        confirmationTextField.delegate = self
     }
 
-    override func didReceiveMemoryWarning()
+    func textFieldShouldReturn(textField: UITextField) -> Bool
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if (textField == pseudoTextField)
+        {
+            pseudoTextField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        }
+        else if (textField == passwordTextField)
+        {
+            passwordTextField.resignFirstResponder()
+            confirmationTextField.becomeFirstResponder()
+        }
+        else if (textField == confirmationTextField)
+        {
+            checkForm()
+        }
+        return true
     }
     
-
+    private func checkForm()
+    {
+        let pseudo = pseudoTextField.text
+        let password = passwordTextField.text
+        let confirmation = confirmationTextField.text
+        
+        let params = [
+            "pseudo": [
+                "field": pseudoTextField,
+                "value": pseudo
+            ],
+            "password": [
+                "field": passwordTextField,
+                "value": password
+            ],
+            "confirmation": [
+                "field": confirmationTextField,
+                "value": confirmation
+            ]
+        ]
+        
+        let formValidation = FormValidator(params: params)
+        
+        if formValidation.isValid()
+        {
+            println("VALID")
+        }
+        else
+        {
+            println("NOT VALID")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
