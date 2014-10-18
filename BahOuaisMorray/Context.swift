@@ -23,4 +23,10 @@ class Context
     }
     
     let env = Environment(setEnv: .DEVELOPMENT)
+    var authentificationService: AuthentificationService!
+    
+    func setup()
+    {
+        authentificationService = AuthentificationService()
+    }
 }

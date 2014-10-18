@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
         UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
         
+        Context.shared.setup()
+        
         return true
     }
     

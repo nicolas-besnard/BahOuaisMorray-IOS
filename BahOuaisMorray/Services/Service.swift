@@ -31,9 +31,9 @@ class Service
         }
     }
     
-    private func handleError(operation: AFHTTPRequestOperation!, error: NSError!)
+    func handleError(operation: AFHTTPRequestOperation!, error: NSError!)
     {
         println("fail")
-        println(error.localizedDescription)
+        println(operation.response)
     }
 }
