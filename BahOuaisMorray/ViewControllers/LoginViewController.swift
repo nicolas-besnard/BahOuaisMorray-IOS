@@ -19,6 +19,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate
         
         nicknameTextField.delegate = self
         passwordTextField.delegate = self
+        
+        nicknameTextField.becomeFirstResponder()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool

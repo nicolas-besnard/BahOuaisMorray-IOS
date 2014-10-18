@@ -21,6 +21,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
         nicknameTextField.delegate     = self
         passwordTextField.delegate     = self
         confirmationTextField.delegate = self
+        
+        nicknameTextField.becomeFirstResponder()
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool
