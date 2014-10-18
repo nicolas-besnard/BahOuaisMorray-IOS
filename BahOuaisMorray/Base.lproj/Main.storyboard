@@ -37,6 +37,9 @@
                                 <state key="normal" title="S'ENREGISTRER">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Yef-ak-s5z" kind="show" id="P5Y-M3-WCi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -107,7 +110,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yP-w3-uBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="233"/>
+            <point key="canvasLocation" x="1841" y="-67"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="h21-xe-IIV">
+            <objects>
+                <viewController id="Yef-ak-s5z" customClass="RegisterViewController" customModule="BahOuaisMorray" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CHO-zN-fM7"/>
+                        <viewControllerLayoutGuide type="bottom" id="en2-TH-Lyu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6o5-Zn-pRN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pseudo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6He-Zf-I5A">
+                                <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BRG-kO-8Jx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-5r-nvy">
+                                <rect key="frame" x="0.0" y="124" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VdR-e2-mWm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-Xq-nkm">
+                                <rect key="frame" x="0.0" y="184" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GDu-gk-NLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-ij-eLM">
+                                <rect key="frame" x="0.0" y="244" width="600" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Créer le compte">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6He-Zf-I5A" firstAttribute="leading" secondItem="6o5-Zn-pRN" secondAttribute="leadingMargin" constant="-16" id="2Nl-DQ-tg3"/>
+                            <constraint firstItem="Hsr-Xq-nkm" firstAttribute="top" secondItem="wG1-5r-nvy" secondAttribute="bottom" id="6pN-Dk-B9i"/>
+                            <constraint firstItem="Hsr-Xq-nkm" firstAttribute="leading" secondItem="6o5-Zn-pRN" secondAttribute="leadingMargin" constant="-16" id="Cb1-dF-2dI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wG1-5r-nvy" secondAttribute="trailing" constant="-16" id="Iv3-8a-0ks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hsr-Xq-nkm" secondAttribute="trailing" constant="-16" id="KtM-ja-9qa"/>
+                            <constraint firstItem="Hsr-Xq-nkm" firstAttribute="top" secondItem="wG1-5r-nvy" secondAttribute="bottom" id="NZi-Og-U0N"/>
+                            <constraint firstItem="wG1-5r-nvy" firstAttribute="top" secondItem="6He-Zf-I5A" secondAttribute="bottom" id="khd-cE-nnH"/>
+                            <constraint firstItem="6He-Zf-I5A" firstAttribute="top" secondItem="CHO-zN-fM7" secondAttribute="bottom" id="ljq-gs-sC2"/>
+                            <constraint firstItem="wG1-5r-nvy" firstAttribute="leading" secondItem="6o5-Zn-pRN" secondAttribute="leadingMargin" constant="-16" id="rQd-d6-Mrk"/>
+                            <constraint firstItem="wG1-5r-nvy" firstAttribute="top" secondItem="6He-Zf-I5A" secondAttribute="bottom" id="vyd-Tq-gnE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6He-Zf-I5A" secondAttribute="trailing" constant="-16" id="xTS-Vw-OSV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmationTextField" destination="Hsr-Xq-nkm" id="c21-1x-ldo"/>
+                        <outlet property="createAccountButton" destination="WFt-ij-eLM" id="LMc-9K-FLM"/>
+                        <outlet property="passwordTextField" destination="wG1-5r-nvy" id="mX7-Us-Eyi"/>
+                        <outlet property="pseudoTextField" destination="6He-Zf-I5A" id="n3n-tp-6nm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jT-P8-bgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xFT-Ys-637">

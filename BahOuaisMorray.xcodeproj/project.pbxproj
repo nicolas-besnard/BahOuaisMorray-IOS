@@ -11,6 +11,7 @@
 		3736044419F2A1A1009DAF80 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044319F2A1A1009DAF80 /* Environment.swift */; };
 		3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044519F2A48B009DAF80 /* AuthentificationService.swift */; };
 		3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044719F2A8ED009DAF80 /* LoginViewController.swift */; };
+		3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044919F2B0B1009DAF80 /* RegisterViewController.swift */; };
 		37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBF919F285D700BA56B3 /* AppDelegate.swift */; };
 		37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */; };
 		37B8FBFF19F285D700BA56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FBFD19F285D700BA56B3 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		3736044319F2A1A1009DAF80 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		3736044519F2A48B009DAF80 /* AuthentificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
 		3736044719F2A8ED009DAF80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3736044919F2B0B1009DAF80 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */,
 				3736044719F2A8ED009DAF80 /* LoginViewController.swift */,
+				3736044919F2B0B1009DAF80 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */,
 				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
 				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
+				3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */,
 				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
 				37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */,
 				37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */,
