@@ -166,8 +166,8 @@
                     </view>
                     <connections>
                         <outlet property="confirmationTextField" destination="Hsr-Xq-nkm" id="c21-1x-ldo"/>
+                        <outlet property="nicknameTextField" destination="6He-Zf-I5A" id="T8D-3T-sQM"/>
                         <outlet property="passwordTextField" destination="wG1-5r-nvy" id="mX7-Us-Eyi"/>
-                        <outlet property="pseudoTextField" destination="6He-Zf-I5A" id="n3n-tp-6nm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jT-P8-bgY" userLabel="First Responder" sceneMemberID="firstResponder"/>

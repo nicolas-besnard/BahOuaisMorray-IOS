@@ -21,15 +21,15 @@ class FormValidator
     {
         let alert = UIAlertView(title: "Tu t'es trompé Morray !", message: "", delegate: nil, cancelButtonTitle: "OK")
         
-        if let pseudo = params["pseudo"]
+        if let nickname = params["nickname"]
         {
-            let realPseudo = pseudo["value"]! as String
+            let realnickname = nickname["value"]! as String
 
-            let pseudoLen = countElements(realPseudo)
+            let nicknameLen = countElements(realnickname)
 
-            if !(pseudoLen >= 4 && pseudoLen < 25)
+            if !(nicknameLen >= 4 && nicknameLen < 25)
             {
-                (pseudo["field"] as UITextField).becomeFirstResponder()
+                (nickname["field"] as UITextField).becomeFirstResponder()
                 
                 alert.message = "Ton pseudo a besoin de 4 caractères minimum."
                 alert.show()

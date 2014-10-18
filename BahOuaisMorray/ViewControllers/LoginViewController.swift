@@ -20,6 +20,45 @@ class LoginViewController: UIViewController, UITextFieldDelegate
         nicknameTextField.delegate = self
         passwordTextField.delegate = self
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        if (textField == nicknameTextField)
+        {
+            nicknameTextField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        }
+        else if (textField == passwordTextField)
+        {
+            checkForm()
+        }
+
+        return true
+    }
+    
+    private func checkForm()
+    {
+        let nickname = nicknameTextField.text
+        let password = passwordTextField.text
+        
+        let params = [
+            "nickname": [
+                "field": nicknameTextField,
+                "value": nickname
+            ],
+            "password": [
+                "field": passwordTextField,
+                "value": password
+            ],
+        ]
+        
+        let formValidation = FormValidator(params: params)
+        
+        if formValidation.isValid()
+        {
+            println("VALID")
+        }
+    }
 
     /*
     // MARK: - Navigation

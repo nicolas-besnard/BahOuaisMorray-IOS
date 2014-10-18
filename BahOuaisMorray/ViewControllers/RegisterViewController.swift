@@ -10,7 +10,7 @@ import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate
 {
-    @IBOutlet weak var pseudoTextField: UITextField!
+    @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmationTextField: UITextField!
         
@@ -18,16 +18,16 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
     {
         super.viewDidLoad()
         
-        pseudoTextField.delegate       = self
+        nicknameTextField.delegate     = self
         passwordTextField.delegate     = self
         confirmationTextField.delegate = self
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
-        if (textField == pseudoTextField)
+        if (textField == nicknameTextField)
         {
-            pseudoTextField.resignFirstResponder()
+            nicknameTextField.resignFirstResponder()
             passwordTextField.becomeFirstResponder()
         }
         else if (textField == passwordTextField)
@@ -44,14 +44,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
     
     private func checkForm()
     {
-        let pseudo = pseudoTextField.text
+        let nickname = nicknameTextField.text
         let password = passwordTextField.text
         let confirmation = confirmationTextField.text
         
         let params = [
-            "pseudo": [
-                "field": pseudoTextField,
-                "value": pseudo
+            "nickname": [
+                "field": nicknameTextField,
+                "value": nickname
             ],
             "password": [
                 "field": passwordTextField,
@@ -68,10 +68,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
         if formValidation.isValid()
         {
             println("VALID")
-        }
-        else
-        {
-            println("NOT VALID")
         }
     }
     
