@@ -12,6 +12,8 @@
 	<dict>
 		<key>36AAEFEBB0844B8D19880BD28AC371378C45145C</key>
 		<string>github.com:nicolas-besnard/BahOuaisMorray-IOS.git</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>https://github.com/Alamofire/Alamofire.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BahOuaisMorray.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>36AAEFEBB0844B8D19880BD28AC371378C45145C</key>
 		<string>..</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>../Alamofire</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:nicolas-besnard/BahOuaisMorray-IOS.git</string>
@@ -28,6 +32,14 @@
 	<string>36AAEFEBB0844B8D19880BD28AC371378C45145C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Alamofire</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

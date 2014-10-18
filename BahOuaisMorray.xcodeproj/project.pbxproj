@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37130E6F19F2F7C6005C5089 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */; };
 		3736044119F2A10C009DAF80 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044019F2A10C009DAF80 /* Service.swift */; };
 		3736044419F2A1A1009DAF80 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044319F2A1A1009DAF80 /* Environment.swift */; };
 		3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044519F2A48B009DAF80 /* AuthentificationService.swift */; };
@@ -25,6 +26,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3704F77B19F2DB5A00B38F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		3704F77D19F2DB5A00B38F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		3704F77F19F2DBAC00B38F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 		37B8FC0A19F285D700BA56B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37B8FBEC19F285D600BA56B3 /* Project object */;
@@ -35,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		3736043C19F29FCC009DAF80 /* BahOuaisMorray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BahOuaisMorray-Bridging-Header.h"; sourceTree = "<group>"; };
 		3736044019F2A10C009DAF80 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3736044319F2A1A1009DAF80 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -78,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3704F77719F2DB5900B38F13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3704F77C19F2DB5A00B38F13 /* Alamofire.framework */,
+				3704F77E19F2DB5A00B38F13 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3736043F19F2A0F0009DAF80 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +222,9 @@
 		A88DCEF6A9BFC82FBBE52454 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */,
 				AA27A2BAF6D6FC0B304613E8 /* libPods.a */,
+				37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +245,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3704F78019F2DBAC00B38F13 /* PBXTargetDependency */,
 			);
 			name = BahOuaisMorray;
 			productName = BahOuaisMorray;
@@ -263,6 +299,12 @@
 			mainGroup = 37B8FBEB19F285D600BA56B3;
 			productRefGroup = 37B8FBF519F285D600BA56B3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3704F77719F2DB5900B38F13 /* Products */;
+					ProjectRef = 3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				37B8FBF319F285D600BA56B3 /* BahOuaisMorray */,
@@ -270,6 +312,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3704F77C19F2DB5A00B38F13 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3704F77B19F2DB5A00B38F13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3704F77E19F2DB5A00B38F13 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 3704F77D19F2DB5A00B38F13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		37B8FBF219F285D600BA56B3 /* Resources */ = {
@@ -332,6 +391,7 @@
 				3736044F19F2B6A1009DAF80 /* FormValidator.swift in Sources */,
 				3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */,
 				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
+				37130E6F19F2F7C6005C5089 /* SwiftyJSON.swift in Sources */,
 				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
 				3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */,
 				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
@@ -353,6 +413,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3704F78019F2DBAC00B38F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 3704F77F19F2DBAC00B38F13 /* PBXContainerItemProxy */;
+		};
 		37B8FC0B19F285D700BA56B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 37B8FBF319F285D600BA56B3 /* BahOuaisMorray */;
@@ -382,6 +447,7 @@
 /* Begin XCBuildConfiguration section */
 		37B8FC1119F285D700BA56B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424D5F8D0F0DC8D7BBFCF511 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

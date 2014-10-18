@@ -8,19 +8,14 @@
 
 import Foundation
 
+import Alamofire
+
 class Service
 {
-    let manager = AFHTTPRequestOperationManager()
-    
     var baseEndPoint: String!
     
     init()
     {
-        manager.securityPolicy.allowInvalidCertificates = true
-        
-        let jsonSerializer = AFJSONRequestSerializer()
-        manager.requestSerializer = AFJSONRequestSerializer()
-        
         if Context.shared.env.isDevelopment()
         {
             baseEndPoint = "http://localhost:3000"
@@ -31,9 +26,9 @@ class Service
         }
     }
     
-    func handleError(operation: AFHTTPRequestOperation!, error: NSError!)
+    func handleError(url: NSURLRequest, response: NSHTTPURLResponse?, data: AnyObject?, error: NSError?)
     {
         println("fail")
-        println(operation.response)
+        println(data)
     }
 }

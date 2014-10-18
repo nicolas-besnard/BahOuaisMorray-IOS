@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class AuthentificationService : Service
 {
@@ -20,15 +21,21 @@ class AuthentificationService : Service
             "push_token": pushToken
         ]
         
-        manager.POST(endPoint,
-            parameters: parameters,
-            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                println("success")
-            },
-            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
-                self.handleError(operation, error: error)
-            }
-        )
+        Alamofire.request(.POST, endPoint, parameters: parameters)
+            .responseJSON { (url, response, data, error) in
+                if response?.statusCode >= 300
+                {
+                    self.handleError(url, response: response, data: data, error: error)
+                }
+                else
+                {
+                    if let possibleJson: AnyObject = data
+                    {
+                        let json = JSON(possibleJson)
+                        println("Token " + json["token"].stringValue)
+                    }
+                }
+        }
     }
     
     func register(nickname: String!, password: String!, pushToken: String!)
@@ -40,16 +47,22 @@ class AuthentificationService : Service
             "password": password,
             "push_token": pushToken
         ]
-        
-        manager.POST(endPoint,
-            parameters: parameters,
-            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                println("success")
-                println(responseObject)
-            },
-            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
-               self.handleError(operation, error: error)
-            }
-        )
+
+        Alamofire.request(.POST, endPoint, parameters: parameters)
+            .responseJSON { (url, response, data, error) in
+                if response?.statusCode >= 300
+                {
+                    self.handleError(url, response: response, data: data, error: error)
+                }
+                else
+                {
+                    if let possibleJson: AnyObject = data
+                    {
+                        let json = JSON(possibleJson)
+                        println("Token" + json["token"].stringValue)
+                    }
+                }
+        }
+
     }
 }
