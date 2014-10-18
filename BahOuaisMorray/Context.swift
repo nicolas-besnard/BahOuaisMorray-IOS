@@ -10,6 +10,7 @@ import Foundation
 
 class Context
 {
+    // S I N G L E T O N
     class var shared : Context
     {
         
@@ -20,4 +21,6 @@ class Context
         
         return Static.instance
     }
+    
+    let env = Environment(setEnv: .DEVELOPMENT)
 }

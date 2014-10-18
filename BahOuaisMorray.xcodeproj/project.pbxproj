@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3736044119F2A10C009DAF80 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044019F2A10C009DAF80 /* Service.swift */; };
+		3736044419F2A1A1009DAF80 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044319F2A1A1009DAF80 /* Environment.swift */; };
+		3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044519F2A48B009DAF80 /* AuthentificationService.swift */; };
+		3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044719F2A8ED009DAF80 /* LoginViewController.swift */; };
 		37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBF919F285D700BA56B3 /* AppDelegate.swift */; };
-		37B8FBFC19F285D700BA56B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* ViewController.swift */; };
+		37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */; };
 		37B8FBFF19F285D700BA56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FBFD19F285D700BA56B3 /* Main.storyboard */; };
 		37B8FC0119F285D700BA56B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FC0019F285D700BA56B3 /* Images.xcassets */; };
 		37B8FC0419F285D700BA56B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FC0219F285D700BA56B3 /* LaunchScreen.xib */; };
@@ -29,17 +33,21 @@
 
 /* Begin PBXFileReference section */
 		3736043C19F29FCC009DAF80 /* BahOuaisMorray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BahOuaisMorray-Bridging-Header.h"; sourceTree = "<group>"; };
+		3736044019F2A10C009DAF80 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3736044319F2A1A1009DAF80 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3736044519F2A48B009DAF80 /* AuthentificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
+		3736044719F2A8ED009DAF80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37B8FBFB19F285D700BA56B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		37B8FBFE19F285D700BA56B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B8FC0019F285D700BA56B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37B8FC0319F285D700BA56B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		37B8FC0919F285D700BA56B3 /* BahOuaisMorrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BahOuaisMorrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FC0E19F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FC0F19F285D700BA56B3 /* BahOuaisMorrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BahOuaisMorrayTests.swift; sourceTree = "<group>"; };
-		37ED7C7719F29E1B00ABB22C /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		37ED7C7719F29E1B00ABB22C /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Context.swift; path = ../Context.swift; sourceTree = "<group>"; };
 		424D5F8D0F0DC8D7BBFCF511 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		96D9DCF06E9CC39EC6B72502 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA27A2BAF6D6FC0B304613E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +72,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3736043F19F2A0F0009DAF80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3736044019F2A10C009DAF80 /* Service.swift */,
+				3736044519F2A48B009DAF80 /* AuthentificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3736044219F2A18D009DAF80 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				37ED7C7719F29E1B00ABB22C /* Context.swift */,
+				3736044319F2A1A1009DAF80 /* Environment.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		37B8FBEB19F285D600BA56B3 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +113,14 @@
 		37B8FBF619F285D600BA56B3 /* BahOuaisMorray */ = {
 			isa = PBXGroup;
 			children = (
+				3736044219F2A18D009DAF80 /* Utils */,
+				3736043F19F2A0F0009DAF80 /* Services */,
 				37ED7C7619F29DEE00ABB22C /* ViewControllers */,
 				37B8FBF919F285D700BA56B3 /* AppDelegate.swift */,
 				37B8FBFD19F285D700BA56B3 /* Main.storyboard */,
 				37B8FC0019F285D700BA56B3 /* Images.xcassets */,
 				37B8FC0219F285D700BA56B3 /* LaunchScreen.xib */,
 				37B8FBF719F285D600BA56B3 /* Supporting Files */,
-				37ED7C7719F29E1B00ABB22C /* Context.swift */,
 				3736043C19F29FCC009DAF80 /* BahOuaisMorray-Bridging-Header.h */,
 			);
 			path = BahOuaisMorray;
@@ -127,7 +154,8 @@
 		37ED7C7619F29DEE00ABB22C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				37B8FBFB19F285D700BA56B3 /* ViewController.swift */,
+				37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */,
+				3736044719F2A8ED009DAF80 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,9 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */,
 				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
-				37B8FBFC19F285D700BA56B3 /* ViewController.swift in Sources */,
+				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
+				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
+				37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */,
 				37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */,
+				3736044419F2A1A1009DAF80 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
