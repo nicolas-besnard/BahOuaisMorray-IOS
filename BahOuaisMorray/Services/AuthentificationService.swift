@@ -55,7 +55,7 @@ class AuthentificationService : Service
             .responseJSON { (url, response, data, error) in
                 if response?.statusCode >= 300
                 {
-                    self.handleError(url, response: response, data: data, error: error)
+                    self.handleRegisterError(url, response: response, data: data, error: error)
                 }
                 else
                 {

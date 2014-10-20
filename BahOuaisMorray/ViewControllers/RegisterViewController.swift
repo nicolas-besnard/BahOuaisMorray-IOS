@@ -23,6 +23,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
         confirmationTextField.delegate = self
         
         nicknameTextField.becomeFirstResponder()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "clearForm:", name: "ClearFormNotification", object: nil)
+    }
+    
+    deinit
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "ClearFormNotification", object: nil)
+    }
+    
+    func clearForm(notification: NSNotification)
+    {
+        nicknameTextField.text = ""
+        passwordTextField.text = ""
+        confirmationTextField.text = ""
+        nicknameTextField.becomeFirstResponder()
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool

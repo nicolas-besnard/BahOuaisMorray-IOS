@@ -30,5 +30,34 @@ class Service
     {
         println("fail")
         println(data)
+        if let errors: AnyObject = data
+        {
+            let json = JSON(errors)
+            let msg = json["msg"].stringValue
+            var error = ""
+            
+            showAlert(NSLocalizedString(msg, comment: ""))
+        }
+    }
+    
+    func handleRegisterError(url: NSURLRequest, response: NSHTTPURLResponse?, data: AnyObject?, error: NSError?)
+    {
+        if let errors: AnyObject = data
+        {
+            let json = JSON(errors)
+            let errorField = json["field"].string!
+            let errorType = json["error"].string!
+            
+            showAlert("\(errorField) \(errorType)")
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("ClearFormNotification", object: nil)
+        }
+    }
+    
+    private func showAlert(message: String!)
+    {
+        let alert = UIAlertView(title: "Morray ! Il y a un truc qui va pas !", message: message, delegate: nil, cancelButtonTitle: "Ok")
+        
+        alert.show();
     }
 }
