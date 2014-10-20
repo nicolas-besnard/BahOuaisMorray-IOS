@@ -60,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		371015CF19F544A400189804 /* sandbox.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = sandbox.playground; sourceTree = "<group>"; };
 		37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		37130E7119F30093005C5089 /* UserHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
 		37130E7319F307B7005C5089 /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		37B8FBEB19F285D600BA56B3 = {
 			isa = PBXGroup;
 			children = (
+				371015CF19F544A400189804 /* sandbox.playground */,
 				37B8FBF619F285D600BA56B3 /* BahOuaisMorray */,
 				37B8FC0C19F285D700BA56B3 /* BahOuaisMorrayTests */,
 				37B8FBF519F285D600BA56B3 /* Products */,
