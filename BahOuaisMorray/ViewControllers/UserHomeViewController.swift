@@ -13,14 +13,26 @@ class UserHomeViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: "didClickOnMenuButton")
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
-
-        navigationController?.setNavigationBarHidden(false, animated: false)
         
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        deleteBackButton()
+    }
+    
+    func didClickOnMenuButton()
+    {
+        println("test")
+    }
+    
+    
+    private func deleteBackButton()
+    {
         let tmpView = UIView(frame: CGRectZero)
         let button = UIBarButtonItem(customView: tmpView)
         navigationItem.setLeftBarButtonItem(button, animated: false)
