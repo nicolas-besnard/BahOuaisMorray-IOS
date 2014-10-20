@@ -44,7 +44,10 @@ class AddContactViewController: UIViewController, UITextFieldDelegate
         
         if formValidation.isValid()
         {
-            Context.shared.findContactService.find(nickname)
+            Context.shared.findContactService.find(nickname, callback: { (user: User) in
+                Context.shared.currentUser.contacts.append(user)
+                self.navigationController?.popToRootViewControllerAnimated(true)
+            })
         }
     }
 }

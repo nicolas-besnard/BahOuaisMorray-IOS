@@ -11,6 +11,7 @@ import Foundation
 class User
 {
     var ID: String!
+    var nickname: String!
     
     init()
     {}

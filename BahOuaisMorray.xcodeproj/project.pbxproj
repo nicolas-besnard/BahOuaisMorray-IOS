@@ -22,6 +22,7 @@
 		374DDEA119F581180097C57C /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DDEA019F581180097C57C /* AddContactViewController.swift */; };
 		374DDEA319F5851D0097C57C /* FindContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DDEA219F5851D0097C57C /* FindContactService.swift */; };
 		3778116319F5BCE7002BBA69 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3704F77C19F2DB5A00B38F13 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3778116519F5BDDA002BBA69 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778116419F5BDDA002BBA69 /* Router.swift */; };
 		37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBF919F285D700BA56B3 /* AppDelegate.swift */; };
 		37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */; };
 		37B8FBFF19F285D700BA56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FBFD19F285D700BA56B3 /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		374DDE9E19F57D510097C57C /* UserMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		374DDEA019F581180097C57C /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		374DDEA219F5851D0097C57C /* FindContactService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindContactService.swift; sourceTree = "<group>"; };
+		3778116419F5BDDA002BBA69 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				3736044019F2A10C009DAF80 /* Service.swift */,
 				3736044519F2A48B009DAF80 /* AuthentificationService.swift */,
 				374DDEA219F5851D0097C57C /* FindContactService.swift */,
+				3778116419F5BDDA002BBA69 /* Router.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
 				3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */,
 				37130E7219F30093005C5089 /* UserHomeViewController.swift in Sources */,
+				3778116519F5BDDA002BBA69 /* Router.swift in Sources */,
 				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
 				3736044D19F2B679009DAF80 /* User.swift in Sources */,
 				37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */,

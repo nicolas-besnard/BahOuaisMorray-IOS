@@ -9,17 +9,17 @@
 import Foundation
 import Alamofire
 
+typealias FindContactCompletionBlock = (user: User) -> Void
+
 class FindContactService : Service
 {
-    func find(nickname: String)
+    func find(nickname: String, callback : FindContactCompletionBlock)
     {
         let endPoint = baseEndPoint + "/users/find"
         
-        let parameters = [
-            "nickname": nickname,
-        ]
-        
-        Alamofire.request(.GET, endPoint, parameters: parameters)
+        Router.Token = "050f4d379f544ed2ddda7abb"
+
+        Alamofire.request(Router.FindUser(nickname))
             .responseJSON { (url, response, data, error) in
                 if response?.statusCode >= 300
                 {
@@ -29,8 +29,18 @@ class FindContactService : Service
                 {
                     println("OK")
                     println(data)
+                    if let ok : AnyObject = data
+                    {
+                        let json = JSON(ok)
+                        
+                        let user = json["user"]
+                        let newContact = User()
+                        newContact.ID = user["id"].stringValue
+                        newContact.nickname = user["nickname"].stringValue
+                        
+                        callback(user: newContact)
+                    }
                 }
-                
         }
     }
 }
