@@ -1,0 +1,33 @@
+
+/* Class = "IBUIButton"; normalTitle = "S'ENREGISTRER"; ObjectID = "0oX-qe-zbu"; */
+"0oX-qe-zbu.normalTitle" = "S'ENREGISTRER";
+
+/* Class = "IBUITextField"; placeholder = "Pseudo"; ObjectID = "6He-Zf-I5A"; */
+"6He-Zf-I5A.placeholder" = "Pseudo";
+
+/* Class = "IBUITextField"; placeholder = "Pseudo"; ObjectID = "9fQ-Di-Wn3"; */
+"9fQ-Di-Wn3.placeholder" = "Pseudo";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "CzI-fm-Xaf"; */
+"CzI-fm-Xaf.text" = "Title";
+
+/* Class = "IBUITextField"; placeholder = "Mot de passe"; ObjectID = "D5i-WY-ohR"; */
+"D5i-WY-ohR.placeholder" = "Mot de passe";
+
+/* Class = "IBUITextField"; placeholder = "Pseudo"; ObjectID = "DiU-VX-RQI"; */
+"DiU-VX-RQI.placeholder" = "Pseudo";
+
+/* Class = "IBUITextField"; placeholder = "Confirmation"; ObjectID = "Hsr-Xq-nkm"; */
+"Hsr-Xq-nkm.placeholder" = "Confirmation";
+
+/* Class = "IBUIBarButtonItem"; title = "Menu"; ObjectID = "iTe-XQ-slN"; */
+"iTe-XQ-slN.title" = "Menu";
+
+/* Class = "IBUIButton"; normalTitle = "CONNEXION"; ObjectID = "ncA-Fe-taI"; */
+"ncA-Fe-taI.normalTitle" = "CONNEXION";
+
+/* Class = "IBUILabel"; text = "USER HOME"; ObjectID = "qlS-io-tXd"; */
+"qlS-io-tXd.text" = "USER HOME";
+
+/* Class = "IBUITextField"; placeholder = "Mot de passe"; ObjectID = "wG1-5r-nvy"; */
+"wG1-5r-nvy.placeholder" = "Mot de passe";

@@ -31,8 +31,16 @@ class UserMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("UserMenuCell") as UITableViewCell
         
-        cell.textLabel!.text = menuItems[indexPath.row]
+        cell.textLabel.text = menuItems[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        if indexPath.row == 0
+        {
+            self.navigationController?.performSegueWithIdentifier("ShowAddContact", sender: nil)
+        }
     }
 }

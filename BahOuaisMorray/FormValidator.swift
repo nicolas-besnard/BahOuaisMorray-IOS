@@ -25,13 +25,21 @@ class FormValidator
         {
             let realnickname = nickname["value"]! as String
 
+                println(realnickname)
             let nicknameLen = countElements(realnickname)
 
             if !(nicknameLen >= 4 && nicknameLen < 25)
             {
                 (nickname["field"] as UITextField).becomeFirstResponder()
                 
-                alert.message = "Ton pseudo a besoin de 4 caractères minimum."
+                if (nicknameLen < 4)
+                {
+                    alert.message = "Ton pseudo a besoin de 4 caractères minimum."
+                }
+                else if (nicknameLen >= 25)
+                {
+                    alert.message = "Ton pseudo doit faire 25 caractères maximum."
+                }
                 alert.show()
                 
                 return false

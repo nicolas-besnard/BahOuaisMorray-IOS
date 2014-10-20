@@ -24,10 +24,12 @@ class Context
     
     let env = Environment(setEnv: .DEVELOPMENT)
     var authentificationService: AuthentificationService!
+    var findContactService: FindContactService!
     let currentUser = CurrentUser()
     
     func setup()
     {
         authentificationService = AuthentificationService()
+        findContactService = FindContactService()
     }
 }

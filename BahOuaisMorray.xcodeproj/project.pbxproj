@@ -19,6 +19,9 @@
 		3736044D19F2B679009DAF80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044C19F2B679009DAF80 /* User.swift */; };
 		3736044F19F2B6A1009DAF80 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044E19F2B6A1009DAF80 /* FormValidator.swift */; };
 		374DDE9F19F57D510097C57C /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DDE9E19F57D510097C57C /* UserMenuViewController.swift */; };
+		374DDEA119F581180097C57C /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DDEA019F581180097C57C /* AddContactViewController.swift */; };
+		374DDEA319F5851D0097C57C /* FindContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DDEA219F5851D0097C57C /* FindContactService.swift */; };
+		3778116319F5BCE7002BBA69 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3704F77C19F2DB5A00B38F13 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBF919F285D700BA56B3 /* AppDelegate.swift */; };
 		37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */; };
 		37B8FBFF19F285D700BA56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B8FBFD19F285D700BA56B3 /* Main.storyboard */; };
@@ -44,7 +47,7 @@
 			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
 			remoteInfo = AlamofireTests;
 		};
-		3704F77F19F2DBAC00B38F13 /* PBXContainerItemProxy */ = {
+		3778116019F5BC92002BBA69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */;
 			proxyType = 1;
@@ -59,6 +62,20 @@
 			remoteInfo = BahOuaisMorray;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3778116219F5BCC6002BBA69 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3778116319F5BCE7002BBA69 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
@@ -77,6 +94,8 @@
 		3736044C19F2B679009DAF80 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3736044E19F2B6A1009DAF80 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		374DDE9E19F57D510097C57C /* UserMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
+		374DDEA019F581180097C57C /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		374DDEA219F5851D0097C57C /* FindContactService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindContactService.swift; sourceTree = "<group>"; };
 		37B8FBF419F285D600BA56B3 /* BahOuaisMorray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BahOuaisMorray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B8FBF819F285D700BA56B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B8FBF919F285D700BA56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +145,7 @@
 			children = (
 				3736044019F2A10C009DAF80 /* Service.swift */,
 				3736044519F2A48B009DAF80 /* AuthentificationService.swift */,
+				374DDEA219F5851D0097C57C /* FindContactService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,6 +241,7 @@
 				3736044919F2B0B1009DAF80 /* RegisterViewController.swift */,
 				37130E7119F30093005C5089 /* UserHomeViewController.swift */,
 				374DDE9E19F57D510097C57C /* UserMenuViewController.swift */,
+				374DDEA019F581180097C57C /* AddContactViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,11 +277,12 @@
 				37B8FBF119F285D600BA56B3 /* Frameworks */,
 				37B8FBF219F285D600BA56B3 /* Resources */,
 				B77E926F9E577AB8098E3F4F /* Copy Pods Resources */,
+				3778116219F5BCC6002BBA69 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3704F78019F2DBAC00B38F13 /* PBXTargetDependency */,
+				3778116119F5BC92002BBA69 /* PBXTargetDependency */,
 			);
 			name = BahOuaisMorray;
 			productName = BahOuaisMorray;
@@ -404,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374DDEA119F581180097C57C /* AddContactViewController.swift in Sources */,
+				374DDEA319F5851D0097C57C /* FindContactService.swift in Sources */,
 				3736044F19F2B6A1009DAF80 /* FormValidator.swift in Sources */,
 				3736044819F2A8ED009DAF80 /* LoginViewController.swift in Sources */,
 				37ED7C7819F29E1B00ABB22C /* Context.swift in Sources */,
@@ -432,10 +456,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3704F78019F2DBAC00B38F13 /* PBXTargetDependency */ = {
+		3778116119F5BC92002BBA69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
-			targetProxy = 3704F77F19F2DBAC00B38F13 /* PBXContainerItemProxy */;
+			targetProxy = 3778116019F5BC92002BBA69 /* PBXContainerItemProxy */;
 		};
 		37B8FC0B19F285D700BA56B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

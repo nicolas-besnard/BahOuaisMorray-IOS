@@ -36,7 +36,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsI-67-XWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="-828"/>
+            <point key="canvasLocation" x="1752" y="-1220"/>
+        </scene>
+        <!--Add Contact View Controller-->
+        <scene sceneID="D8l-LJ-ECb">
+            <objects>
+                <viewController id="sbx-XA-8P2" customClass="AddContactViewController" customModule="BahOuaisMorray" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AuH-cv-cgq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hcz-AU-7gu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ibL-ga-yM7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pseudo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiU-VX-RQI">
+                                <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZVO-yh-LfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DiU-VX-RQI" firstAttribute="leading" secondItem="ibL-ga-yM7" secondAttribute="leadingMargin" constant="-16" id="GH0-zD-TzP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DiU-VX-RQI" secondAttribute="trailing" constant="-16" id="OVX-v1-UPL"/>
+                            <constraint firstItem="DiU-VX-RQI" firstAttribute="top" secondItem="AuH-cv-cgq" secondAttribute="bottom" id="Umj-SY-WWt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nicknameTextField" destination="DiU-VX-RQI" id="NZd-gd-Ae0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAG-Pq-KEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="-546"/>
         </scene>
         <!--User Menu View Controller-->
         <scene sceneID="yuR-YM-dnO">
@@ -84,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4f-ZJ-A6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357" y="-828"/>
+            <point key="canvasLocation" x="2506" y="-1220"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -137,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127" y="233"/>
+            <point key="canvasLocation" x="1065" y="637"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Uvg-EA-xh6">
@@ -286,11 +322,12 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="86L-Qz-yCr" kind="relationship" relationship="rootViewController" id="emO-a5-tNN"/>
+                        <segue destination="sbx-XA-8P2" kind="show" identifier="ShowAddContact" id="7fB-9m-aJ2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lK-Er-ol6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="-546"/>
+            <point key="canvasLocation" x="900" y="-546"/>
         </scene>
     </scenes>
 </document>

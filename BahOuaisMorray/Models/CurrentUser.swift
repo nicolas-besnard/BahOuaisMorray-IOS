@@ -25,6 +25,7 @@ class CurrentUser
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
+    
     var token : String!
     {
         get
@@ -40,4 +41,6 @@ class CurrentUser
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
+    
+    var contacts : [User] = []
 }
