@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		37130E6F19F2F7C6005C5089 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */; };
+		37130E7219F30093005C5089 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130E7119F30093005C5089 /* UserHomeViewController.swift */; };
+		37130E7419F307B7005C5089 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37130E7319F307B7005C5089 /* CurrentUser.swift */; };
 		3736044119F2A10C009DAF80 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044019F2A10C009DAF80 /* Service.swift */; };
 		3736044419F2A1A1009DAF80 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044319F2A1A1009DAF80 /* Environment.swift */; };
 		3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736044519F2A48B009DAF80 /* AuthentificationService.swift */; };
@@ -59,6 +61,8 @@
 /* Begin PBXFileReference section */
 		3704F77619F2DB5900B38F13 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		37130E6E19F2F7C6005C5089 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		37130E7119F30093005C5089 /* UserHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		37130E7319F307B7005C5089 /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		3736043C19F29FCC009DAF80 /* BahOuaisMorray-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BahOuaisMorray-Bridging-Header.h"; sourceTree = "<group>"; };
 		3736044019F2A10C009DAF80 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3736044319F2A1A1009DAF80 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3736044C19F2B679009DAF80 /* User.swift */,
+				37130E7319F307B7005C5089 /* CurrentUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				37B8FBFB19F285D700BA56B3 /* HomeViewController.swift */,
 				3736044719F2A8ED009DAF80 /* LoginViewController.swift */,
 				3736044919F2B0B1009DAF80 /* RegisterViewController.swift */,
+				37130E7119F30093005C5089 /* UserHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -394,11 +400,13 @@
 				37130E6F19F2F7C6005C5089 /* SwiftyJSON.swift in Sources */,
 				3736044619F2A48B009DAF80 /* AuthentificationService.swift in Sources */,
 				3736044A19F2B0B1009DAF80 /* RegisterViewController.swift in Sources */,
+				37130E7219F30093005C5089 /* UserHomeViewController.swift in Sources */,
 				3736044119F2A10C009DAF80 /* Service.swift in Sources */,
 				3736044D19F2B679009DAF80 /* User.swift in Sources */,
 				37B8FBFC19F285D700BA56B3 /* HomeViewController.swift in Sources */,
 				37B8FBFA19F285D700BA56B3 /* AppDelegate.swift in Sources */,
 				3736044419F2A1A1009DAF80 /* Environment.swift in Sources */,
+				37130E7419F307B7005C5089 /* CurrentUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

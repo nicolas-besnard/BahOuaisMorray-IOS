@@ -59,7 +59,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate
         if formValidation.isValid()
         {
             println("VALID")
-            Context.shared.authentificationService.login(nickname, password: password, pushToken: "push")
+            Context.shared.authentificationService.login(nickname, password: password, pushToken: "push", callback: {
+                println("SHOW HOME ")
+                self.navigationController?.performSegueWithIdentifier("ShowHome", sender: nil)
+            })
         }
     }
 

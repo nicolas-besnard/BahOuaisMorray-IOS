@@ -5,6 +5,33 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--User Home View Controller-->
+        <scene sceneID="Th7-Nb-o56">
+            <objects>
+                <viewController id="86L-Qz-yCr" customClass="UserHomeViewController" customModule="BahOuaisMorray" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTj-el-kfX"/>
+                        <viewControllerLayoutGuide type="bottom" id="B9L-LD-D48"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZYh-Z8-dwv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USER HOME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-io-tXd">
+                                <rect key="frame" x="88" y="145" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BeD-DE-1Hl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsI-67-XWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="-546"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -26,7 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VEp-WO-CmK" kind="show" id="KCt-Zh-BeY"/>
+                                    <segue destination="VEp-WO-CmK" kind="show" identifier="ShowLogin" id="KCt-Zh-BeY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oX-qe-zbu">
@@ -38,7 +65,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yef-ak-s5z" kind="show" id="P5Y-M3-WCi"/>
+                                    <segue destination="Yef-ak-s5z" kind="show" identifier="ShowRegister" id="P5Y-M3-WCi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yP-w3-uBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="-67"/>
+            <point key="canvasLocation" x="2653" y="-67"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="h21-xe-IIV">
@@ -186,11 +213,30 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="NBS-ba-Ggs"/>
+                        <segue destination="r0M-xH-apl" kind="show" identifier="ShowHome" id="r0b-1F-6xn"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqc-cy-Yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="315" y="233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1x4-1G-PWO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r0M-xH-apl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rrv-p4-UKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="86L-Qz-yCr" kind="relationship" relationship="rootViewController" id="emO-a5-tNN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lK-Er-ol6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-546"/>
         </scene>
     </scenes>
 </document>

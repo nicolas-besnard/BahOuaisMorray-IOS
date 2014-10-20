@@ -9,9 +9,11 @@
 import Foundation
 import Alamofire
 
+typealias AuthentificationSuccessCompletionBlock = () -> Void
+
 class AuthentificationService : Service
 {
-    func login(nickname: String!, password: String!, pushToken: String!)
+    func login(nickname: String!, password: String!, pushToken: String!, callback: AuthentificationSuccessCompletionBlock)
     {
         let endPoint = baseEndPoint + "/users/login"
        
@@ -32,13 +34,14 @@ class AuthentificationService : Service
                     if let possibleJson: AnyObject = data
                     {
                         let json = JSON(possibleJson)
-                        println("Token " + json["token"].stringValue)
+                        Context.shared.currentUser.token = json["token"].stringValue
+                        callback()
                     }
                 }
         }
     }
     
-    func register(nickname: String!, password: String!, pushToken: String!)
+    func register(nickname: String!, password: String!, pushToken: String!, callback: AuthentificationSuccessCompletionBlock)
     {
         let endPoint = baseEndPoint + "/users/register"
         
@@ -59,7 +62,8 @@ class AuthentificationService : Service
                     if let possibleJson: AnyObject = data
                     {
                         let json = JSON(possibleJson)
-                        println("Token" + json["token"].stringValue)
+                        Context.shared.currentUser.token = json["token"].stringValue
+                        callback()
                     }
                 }
         }

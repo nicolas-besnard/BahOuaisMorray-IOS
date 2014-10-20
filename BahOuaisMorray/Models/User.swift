@@ -10,4 +10,8 @@ import Foundation
 
 class User
 {
+    var ID: String!
+    
+    init()
+    {}
 }

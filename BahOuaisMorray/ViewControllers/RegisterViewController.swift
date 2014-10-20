@@ -70,7 +70,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
         if formValidation.isValid()
         {
             println("VALID")
-            Context.shared.authentificationService.register(nickname, password: password, pushToken: "caca")
+            Context.shared.authentificationService.register(nickname, password: password, pushToken: "caca", callback: {
+                println("SHOW HOME ")
+                self.navigationController?.performSegueWithIdentifier("ShowHome", sender: nil)
+            })
         }
     }
     

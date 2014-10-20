@@ -24,6 +24,7 @@ class Context
     
     let env = Environment(setEnv: .DEVELOPMENT)
     var authentificationService: AuthentificationService!
+    let currentUser = CurrentUser()
     
     func setup()
     {

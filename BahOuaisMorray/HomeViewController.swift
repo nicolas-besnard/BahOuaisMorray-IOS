@@ -13,12 +13,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        println(Context.shared.currentUser.token)
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        if let hasToken = Context.shared.currentUser.token
+        {
+            self.navigationController?.performSegueWithIdentifier("ShowHome", sender: nil)
+        }
     }
     
     override func viewDidLayoutSubviews()
@@ -37,7 +44,5 @@ class HomeViewController: UIViewController {
     {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
-
-
 }
 
