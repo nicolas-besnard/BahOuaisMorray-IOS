@@ -35,6 +35,18 @@ class AuthentificationService : Service
                     {
                         let json = JSON(possibleJson)
                         Context.shared.currentUser.token = json["token"].stringValue
+
+                        var contacts : [User] = []
+                        
+                        for user in json["contacts"].arrayValue
+                        {
+                            var newContact = User(ID: user["id"].stringValue, nickname: user["nickname"].stringValue)
+                            contacts.append(newContact)
+                        }
+                        
+                        Context.shared.currentUser.contacts = contacts
+                        Context.shared.currentUser.saveContacts()
+                        
                         callback()
                     }
                 }

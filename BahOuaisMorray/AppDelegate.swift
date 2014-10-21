@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        // Delete NSUserDefaults
+//        let appDomain = NSBundle.mainBundle().bundleIdentifier
+//        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
         UIApplication.sharedApplication().registerForRemoteNotifications()
         
         let requestedTypes = UIUserNotificationType.Alert | .Sound

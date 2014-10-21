@@ -17,7 +17,7 @@ class FindContactService : Service
     {
         let endPoint = baseEndPoint + "/users/find"
         
-        Router.Token = "050f4d379f544ed2ddda7abb"
+        Router.Token = Context.shared.currentUser.token
 
         Alamofire.request(Router.FindUser(nickname))
             .responseJSON { (url, response, data, error) in
@@ -27,8 +27,6 @@ class FindContactService : Service
                 }
                 else
                 {
-                    println("OK")
-                    println(data)
                     if let ok : AnyObject = data
                     {
                         let json = JSON(ok)

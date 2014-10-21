@@ -50,7 +50,7 @@ class AddContactViewController: UIViewController, UITextFieldDelegate
             Context.shared.findContactService.find(nickname, callback: { (user: User) in
                 self.currentUser.contacts.append(user)
                 println(self.currentUser.contacts.count)
-                self.currentUser.saveContact()
+                self.currentUser.saveContacts()
                 self.navigationController?.popToRootViewControllerAnimated(true)
             })
         }

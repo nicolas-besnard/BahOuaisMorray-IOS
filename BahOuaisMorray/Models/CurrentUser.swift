@@ -44,7 +44,7 @@ class CurrentUser
     
     var contacts : [User] = []
     
-    func loadContact()
+    func loadContacts()
     {
         if let data: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("currentUserContacts")
         {
@@ -57,7 +57,7 @@ class CurrentUser
         }
     }
 
-    func saveContact()
+    func saveContacts()
     {
         let data = NSKeyedArchiver.archivedDataWithRootObject(contacts)
         NSUserDefaults.standardUserDefaults().setObject(data, forKey: "currentUserContacts")
