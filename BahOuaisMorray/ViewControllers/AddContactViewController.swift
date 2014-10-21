@@ -10,8 +10,9 @@ import UIKit
 
 class AddContactViewController: UIViewController, UITextFieldDelegate
 {
-
     @IBOutlet weak var nicknameTextField: UITextField!
+    
+    var currentUser : CurrentUser!
     
     override func viewDidLoad()
     {
@@ -20,6 +21,8 @@ class AddContactViewController: UIViewController, UITextFieldDelegate
         nicknameTextField.delegate = self
         
         nicknameTextField.becomeFirstResponder()
+        
+        currentUser = Context.shared.currentUser
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool
@@ -45,7 +48,9 @@ class AddContactViewController: UIViewController, UITextFieldDelegate
         if formValidation.isValid()
         {
             Context.shared.findContactService.find(nickname, callback: { (user: User) in
-                Context.shared.currentUser.contacts.append(user)
+                self.currentUser.contacts.append(user)
+                println(self.currentUser.contacts.count)
+                self.currentUser.saveContact()
                 self.navigationController?.popToRootViewControllerAnimated(true)
             })
         }

@@ -34,10 +34,8 @@ class FindContactService : Service
                         let json = JSON(ok)
                         
                         let user = json["user"]
-                        let newContact = User()
-                        newContact.ID = user["id"].stringValue
-                        newContact.nickname = user["nickname"].stringValue
-                        
+                        let newContact = User(ID: user["id"].stringValue, nickname: user["nickname"].stringValue)
+
                         callback(user: newContact)
                     }
                 }

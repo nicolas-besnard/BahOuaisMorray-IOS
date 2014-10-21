@@ -31,5 +31,6 @@ class Context
     {
         authentificationService = AuthentificationService()
         findContactService = FindContactService()
+        currentUser.loadContact()
     }
 }

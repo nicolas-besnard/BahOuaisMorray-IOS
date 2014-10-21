@@ -17,14 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USER HOME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-io-tXd">
-                                <rect key="frame" x="88" y="145" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Pk-iy-sql">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHomeCell" id="cQM-PY-YhH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQM-PY-YhH" id="Nkq-ju-bup">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B9L-LD-D48" firstAttribute="top" secondItem="7Pk-iy-sql" secondAttribute="bottom" id="OaI-wi-Wkv"/>
+                            <constraint firstItem="7Pk-iy-sql" firstAttribute="leading" secondItem="ZYh-Z8-dwv" secondAttribute="leadingMargin" constant="-16" id="Omc-eT-Lfi"/>
+                            <constraint firstItem="7Pk-iy-sql" firstAttribute="top" secondItem="ZYh-Z8-dwv" secondAttribute="topMargin" id="SAF-ny-LNe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Pk-iy-sql" secondAttribute="trailing" constant="-16" id="zu3-90-oG4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BeD-DE-1Hl">
                         <barButtonItem key="rightBarButtonItem" title="Menu" id="iTe-XQ-slN">
@@ -33,6 +46,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="7Pk-iy-sql" id="TVT-bL-5b6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsI-67-XWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

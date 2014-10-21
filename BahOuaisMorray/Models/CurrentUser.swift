@@ -43,4 +43,24 @@ class CurrentUser
     }
     
     var contacts : [User] = []
+    
+    func loadContact()
+    {
+        if let data: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("currentUserContacts")
+        {
+            var data1: AnyObject? = NSKeyedUnarchiver.unarchiveObjectWithData(data as NSData)
+            contacts = data1 as [User]
+        }
+        else
+        {
+            contacts = []
+        }
+    }
+
+    func saveContact()
+    {
+        let data = NSKeyedArchiver.archivedDataWithRootObject(contacts)
+        NSUserDefaults.standardUserDefaults().setObject(data, forKey: "currentUserContacts")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
 }

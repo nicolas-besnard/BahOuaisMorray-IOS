@@ -8,11 +8,27 @@
 
 import Foundation
 
-class User
+class User : NSObject, NSCoding
 {
     var ID: String!
     var nickname: String!
     
-    init()
-    {}
+    init(ID: String, nickname: String)
+    {
+        self.ID = ID
+        self.nickname = nickname
+    }
+    
+    required init(coder aDecoder: NSCoder)
+    {
+        self.ID = aDecoder.decodeObjectForKey("ID") as String
+        self.nickname = aDecoder.decodeObjectForKey("nickname") as String
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder)
+    {
+        aCoder.encodeObject(self.ID, forKey: "ID")
+        aCoder.encodeObject(self.nickname, forKey: "nickname")
+    }
+
 }
