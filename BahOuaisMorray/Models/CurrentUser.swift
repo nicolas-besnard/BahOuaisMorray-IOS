@@ -44,6 +44,12 @@ class CurrentUser
     
     var contacts : [User] = []
     
+    func resetDatas()
+    {
+        ID = nil
+        token = nil
+    }
+    
     func loadContacts()
     {
         if let data: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("currentUserContacts")
